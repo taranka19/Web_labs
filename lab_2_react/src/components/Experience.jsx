@@ -1,11 +1,11 @@
-function Experience() {
+function Education() {
   return (
     <section>
-      <h2>Досвід</h2>
-      <h3>Навчальні проєкти</h3>
-      <p>Виконання лабораторних робіт під час навчання</p>
+      <h2>Освіта</h2>
+      <h3>Львівська політехніка</h3>
+      <p>Спеціальність: Кібербезпека та захист інформації</p>
     </section>
   );
 }
 
-export default Experience;
+export default Education;
