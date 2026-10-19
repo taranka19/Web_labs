@@ -3,53 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>Резюме. Тарас Качмар</title>
+
+    < 1. Зовнішнє підключення CSS (External) >
+    <link rel="stylesheet" href="styles.css">
+
+    < 2. Внутрішнє підключення CSS (Internal) >
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+    </style>
 </head>
 <body>
 
-<header>
-    <h1>Резюме</h1>
-    <p>Ім'я: Тарас Качмар</p>
-</header>
+    <!-- 3. Вбудований стиль (Inline) + ID для селектора  -->
+    <header id="main-header">
+        <h1 style="color: #33994d">Качмар Тарас</h1>
+        <p>Ім'я: Тарас Качмар</p>
+    </header>
 
-<main>
-    <section>
-        <h2>Про мене</h2>
-        <p>Студент, цікавлюсь вебпрограмуванням</p>
-    </section>
+    <!-- Секції у Flexbox-контейнер -->
+    <main class="container">
+        <section class="card">
+            <h2>Про мене</h2>
+            <p>Студент, цікавлюсь вебпрограмуванням</p>
+        </section>
 
-    <section>
-        <h2>Навички</h2>
+        <section class="card">
+            <h2>Навички</h2>
+            <ul>
+                <li>Python</li>
+                <li>C#</li>
+                <li>HTML</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Освіта</h2>
+            <h3>Львівська політехніка</h3>
+            <p>Спеціальність: Кібербезпека та захист інформації</p>
+        </section>
+
+        <section class="card">
+            <h2>Досвід</h2>
+            <h3>Навчальні проєкти</h3>
+            <p>Виконання лабораторних робіт під час навчання</p>
+        </section>
+    </main>
+
+    <footer class="card" style="margin-top: 20px;">
+        <h2>Контакти</h2>
         <ul>
-            <li>Python</li>
-            <li>C#</li>
-            <li>HTML</li>
+            <li>
+                <!-- target="_blank" для спрацювання селектора атрибута -->
+                <a href="https://github.com/taranka19" target="_blank">GitHub</a>
+            </li>
+            <li>
+                Email: <a href="mailto:taras.kachmar.kb.25@lpnu.ua">taras.kachmar.kb.25@lpnu.ua</a>
+            </li>
         </ul>
-    </section>
-
-    <section>
-        <h2>Освіта</h2>
-        <h3>Львівська політехніка</h3>
-        <p>Спеціальність: Кібербезпека та захист інформації</p>
-    </section>
-
-    <section>
-        <h2>Досвід</h2>
-        <h3>Навчальні проєкти</h3>
-        <p>Виконання лабораторних робіт під час навчання</p>
-    </section>
-</main>
-
-<footer>
-    <h2>Контакти</h2>
-    <ul>
-        <li>
-            <a href="https://github.com/taranka19">GitHub</a>
-        </li>
-        <li>
-            Email: <a href="mailto:taras.kachmar.kb.25@lpnu.ua">taras.kachmar.kb.25@lpnu.ua</a>
-        </li>
-    </ul>
-</footer>
+    </footer>
 
 </body>
 </html>
